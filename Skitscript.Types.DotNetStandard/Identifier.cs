@@ -27,11 +27,11 @@ namespace Skitscript.Types.DotNetStandard
         /// <param name="verbatim">The identifier's exact text as written in the original document.</param>
         /// <param name="fromColumn">The column on which the identifier started in the original document.</param>
         /// <exception cref="ArgumentNullException">Thrown when <paramref name="verbatim" /> is <see langword="null" />.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="verbatim" /> is <see cref="String.Empty" /> or white space.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="verbatim" /> is <see cref="string.Empty" /> or white space.</exception>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="verbatim" /> includes preceding or trailing white space.</exception>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="verbatim" /> contains disallowed words.</exception>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="verbatim" /> contains disallowed characters.</exception>
-        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="verbatim" /> is <see cref="String.Empty" /> once all excluded characters are filtered out.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="verbatim" /> is <see cref="string.Empty" /> once all excluded characters are filtered out.</exception>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when <paramref name="fromColumn" /> is less than 1.</exception>
         public Identifier(string verbatim, int fromColumn)
         {
