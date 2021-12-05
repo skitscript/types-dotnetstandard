@@ -152,12 +152,14 @@ namespace Skitscript.Types.DotNetStandard.Unit
             Assert.Equal("example-ident-ifier-string", identifier.Normalized);
         }
 
-        [Fact]
-        public void CopiesFromColumn()
+        [Theory]
+        [InlineData(1)]
+        [InlineData(2)]
+        public void CopiesFromColumn(int fromColumn)
         {
-            var identifier = new Identifier("Example! Ident*ifier String", 15);
+            var identifier = new Identifier("Example! Ident*ifier String", fromColumn);
 
-            Assert.Equal(15, identifier.FromColumn);
+            Assert.Equal(fromColumn, identifier.FromColumn);
         }
 
         [Fact]
